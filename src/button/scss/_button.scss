@@ -1,0 +1,131 @@
+* {
+  font-size: 62.5%;
+}
+.defaultButton {
+  box-sizing: border-box;
+  width: 46.875rem;
+  height: 10.625rem;
+  min-width: fit-content;
+  min-height: 39px;
+  max-width: 100%;
+  max-height: 10.625rem;
+  background: #231f20;
+  color: #fff;
+  font-family: 'Vazir';
+  font-size: 3.125rem;
+  text-align: center;
+  border: 0.4rem solid #231f20;
+  border-radius: 5.3125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &:is(.noBG) {
+    color: #231f20;
+  }
+
+  &.white {
+    border: 0.4rem solid #231f20;
+    background: #fff;
+    color: #231f20;
+    &:is(.noBG) {
+      color: #fff;
+    }
+  }
+
+  &.blue {
+    border: 0.4rem solid #0097da;
+    background: #0097da;
+
+    &:is(.noBG) {
+      color: #0097da;
+    }
+  }
+
+  &.orange {
+    border: 0.4rem solid #f79441;
+    background: #f79441;
+
+    &:is(.noBG) {
+      color: #f79441;
+    }
+  }
+
+  &.green {
+    border: 0.4rem solid #8dc63f;
+    background: #8dc63f;
+
+    &:is(.noBG) {
+      color: #8dc63f;
+    }
+  }
+
+  &.purple {
+    border: 0.4rem solid #464fa1;
+    background: #464fa1;
+
+    &:is(.noBG) {
+      color: #464fa1;
+    }
+  }
+
+  &.red {
+    border: 0.4rem solid #da0041;
+    background: #da0041;
+
+    &:is(.noBG) {
+      color: #da0041;
+    }
+  }
+
+  &.disabled {
+    border: 0.4rem solid #ababab;
+    background: #ababab;
+    cursor: not-allowed;
+    &:is(.noBG) {
+      color: #ababab;
+    }
+  }
+
+  &.noBG {
+    background: transparent;
+  }
+
+  &.md {
+    width: 31.25rem;
+    height: 6.875rem;
+    max-height: 6.875rem;
+    font-size: 2.5rem;
+  }
+
+  &.borderLs {
+    border-radius: 1.5rem;
+  }
+
+  &.noBorder {
+    border: 0;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 3.75rem;
+  }
+
+  &.withIcon {
+    justify-content: space-between;
+  }
+
+  &.noMargin {
+    margin: 0;
+  }
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &:hover:not(.disabled):not(.noBorder) {
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.25);
+  }
+}
